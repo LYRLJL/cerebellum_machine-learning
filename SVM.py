@@ -8,7 +8,7 @@ import warnings
 warnings.filterwarnings('ignore', category=UserWarning)  # Ignore warnings
 
 # Data loading
-data = pd.read_excel(r'D:\Multimodel_EF_AR\小脑数据分类\网络特征分类\第二次\EMCI_LMCI_ML_T检验.xlsx')
+data = pd.read_excel(r'D:\')
 
 # Data cleaning and preparation
 data_cleaned = data.drop(['File Name'], axis=1).dropna()
@@ -75,5 +75,6 @@ print(
 print("\nTest set metrics:")
 print(
     f"Accuracy: {test_metrics[0]:.3f}, Sensitivity (Recall): {test_metrics[1]:.3f}, Specificity: {test_metrics[2]:.3f}, AUC: {test_metrics[3]:.3f}")
+
 
 
