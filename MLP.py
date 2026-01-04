@@ -10,7 +10,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Read data
-data_path = r"D:\Multimodel_EF_AR\小脑数据分类\网络特征分类\第二次\EMCI_LMCI_ML_T检验.xlsx"
+data_path = r"D:\"
 data = pd.read_excel(data_path)
 
 # Data cleaning and preparation
@@ -133,3 +133,4 @@ print(
 print("\nTest set 95% confidence intervals for MLP:")
 print(
     f"Accuracy: {ci_test_mlp['acc']}, AUC: {ci_test_mlp['auc']}, Sensitivity (Recall): {ci_test_mlp['sens']}, Specificity: {ci_test_mlp['spec']}")
+
